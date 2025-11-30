@@ -2914,6 +2914,14 @@ img.u-pull-left {
     z-index: 100;
 }
 
+.language-switcher__label {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-body-light);
+    align-self: center;
+}
+
 .lang-btn {
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -2930,6 +2938,29 @@ img.u-pull-left {
     background: var(--color-2);
     border-color: var(--color-2);
     color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    .language-switcher {
+        position: fixed;
+        right: 1.6rem;
+        top: 1.6rem;
+        padding: 0.6rem 0.8rem;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 999px;
+        backdrop-filter: blur(6px);
+    }
+
+    .language-switcher__label {
+        display: none;
+    }
+
+    .lang-btn {
+        border-color: rgba(255, 255, 255, 0.35);
+        color: #fff;
+        padding: 0.35rem 0.65rem;
+        font-size: 1rem;
+    }
 }
 
 /* ------------------------------------------------------------------- 
