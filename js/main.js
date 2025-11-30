@@ -661,7 +661,7 @@
         if (!select) return;
 
         const applyTranslations = function(lang) {
-            const dictionary = translations[lang] || translations.fr;
+            const dictionary = translations[lang] || translations.en;
             document.documentElement.setAttribute('lang', lang);
 
             document.querySelectorAll('[data-i18n]').forEach(function(el) {
@@ -678,7 +678,7 @@
         };
 
         const storedLang = localStorage.getItem('preferred-lang');
-        const initialLang = translations[storedLang] ? storedLang : 'fr';
+        const initialLang = translations[storedLang] ? storedLang : 'en';
 
         select.value = initialLang;
         applyTranslations(initialLang);
