@@ -2686,7 +2686,7 @@ img.u-pull-left {
 }
 
 .text-huge-title {
-    --text-huge : 10.8rem;
+    --text-huge : 8.8rem;
     font-size   : var(--text-huge);
     line-height : 1.0740;
     margin-top  : 0;
@@ -2905,101 +2905,6 @@ img.u-pull-left {
     visibility : hidden;
 }
 
-.language-switcher {
-    position: absolute;
-    right: 3.4rem;
-    top: 3.2rem;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    z-index: 100;
-}
-
-.language-switcher__label {
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--color-body-light);
-}
-
-.language-switcher__field {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-}
-
-.lang-select {
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: var(--color-body);
-    padding: 0.6rem 3.2rem 0.6rem 1.2rem;
-    border-radius: 999px;
-    font-size: 1.2rem;
-    letter-spacing: 0.05em;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    min-width: 8.4rem;
-}
-
-.lang-select:focus {
-    outline: none;
-    border-color: var(--color-2);
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.08);
-}
-
-.lang-select:hover {
-    border-color: rgba(255, 255, 255, 0.35);
-    background: rgba(255, 255, 255, 0.12);
-}
-
-.language-switcher__chevron {
-    position: absolute;
-    right: 1.2rem;
-    pointer-events: none;
-    width: 0.8rem;
-    height: 0.8rem;
-    border-left: 2px solid rgba(255, 255, 255, 0.7);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
-    transform: rotate(-45deg);
-    transition: border-color 0.2s ease;
-}
-
-.lang-select:focus + .language-switcher__chevron,
-.lang-select:hover + .language-switcher__chevron {
-    border-color: #fff;
-}
-
-@media screen and (max-width: 768px) {
-    .language-switcher {
-        position: fixed;
-        right: 1.6rem;
-        top: 1.6rem;
-        padding: 0.6rem 0.8rem;
-        background: rgba(0, 0, 0, 0.6);
-        border-radius: 999px;
-        backdrop-filter: blur(6px);
-    }
-
-    .language-switcher__label {
-        display: none;
-    }
-
-    .lang-select {
-        padding: 0.45rem 3rem 0.45rem 1rem;
-        min-width: 7.2rem;
-        font-size: 1rem;
-        background: rgba(0, 0, 0, 0.35);
-        color: #fff;
-    }
-
-    .language-switcher__chevron {
-        right: 1rem;
-    }
-}
-
 /* ------------------------------------------------------------------- 
  * responsive:
  * page-wrap
@@ -3009,7 +2914,6 @@ img.u-pull-left {
         top : calc(var(--header-height) + 5vh);
     }
 }
-
 
 
 /* ===================================================================
@@ -3069,11 +2973,11 @@ img.u-pull-left {
 }
 
 .main-nav {
-    padding : 0;
+    display: flex;
 }
 
 .main-nav a {
-    padding : 0 2rem 0 2.4rem;
+    padding : 2rem 2rem 2rem 2.4rem;
 }
 
 .main-nav .current a {
@@ -3083,7 +2987,7 @@ img.u-pull-left {
 .main-nav ul {
     list-style       : none;
     display          : flex;
-    flex-flow        : row nowrap;
+    flex: 1 1 90%;
     margin           : 0;
     padding          : 0;
     background-color : var(--color-body);
@@ -3101,6 +3005,21 @@ img.u-pull-left {
 .main-nav li:last-child {
     border-right : none;
 }
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+}
+
+/* Style the select */
+.lang-select {
+    color: #fff;
+    padding : 0 2rem 0 2.4rem;
+    background: transparent; /* optional, depending your design */
+    
+}
+
+
 
 /* --------------------------------------------------------------------
  * ## mobile menu toggle
