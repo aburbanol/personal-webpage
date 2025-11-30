@@ -2901,6 +2901,45 @@ img.u-pull-left {
     width  : 20%;
 }
 
+/* --------------------------------------------------------------------
+ * ## floating cubes layer
+ * -------------------------------------------------------------------- */
+.cubes-layer {
+    position        : fixed;
+    inset           : 0;
+    pointer-events  : none;
+    z-index         : 10;
+    overflow        : hidden;
+}
+
+.cube {
+    position         : absolute;
+    width            : 120px;
+    height           : 120px;
+    border-radius    : 24px;
+    background       : radial-gradient(circle at 10% 0%, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    backdrop-filter  : blur(10px);
+    opacity          : 0.7;
+    transform        : translate3d(0, 0, 0);
+}
+
+.cube--1 { top: 10%; left: 15%; }
+.cube--2 { top: 50%; left: 60%; }
+.cube--3 { top: 80%; left: 30%; }
+
+.section {
+    position : relative;
+    padding  : 8rem 10vw;
+}
+
+.section--under {
+    z-index : 5;
+}
+
+.section--over {
+    z-index : 20;
+}
+
 .ss-preload .s-pagewrap {
     visibility : hidden;
 }

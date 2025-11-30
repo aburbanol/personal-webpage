@@ -693,6 +693,25 @@
     }; // end ssLanguageSwitcher
 
 
+   /* Floating cubes parallax
+    * ------------------------------------------------------ */
+    const ssCubesParallax = function() {
+        const cubes = document.querySelectorAll('.cube');
+        if (!cubes.length) return;
+
+        const updatePositions = function() {
+            const y = window.scrollY;
+            cubes.forEach(function(cube, index) {
+                const speed = 0.05 + index * 0.03;
+                cube.style.transform = `translate3d(0, ${y * speed}px, 0)`;
+            });
+        };
+
+        window.addEventListener('scroll', updatePositions, { passive: true });
+        updatePositions();
+    }; // end ssCubesParallax
+
+
    /* Smoothscroll
     * ------------------------------------------------------ */
     const ssMoveTo = function(){
@@ -749,6 +768,7 @@
         ssAlertBoxes();
         ssMoveTo();
         ssLanguageSwitcher();
+        ssCubesParallax();
 
     })();
 
