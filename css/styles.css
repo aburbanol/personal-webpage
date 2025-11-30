@@ -2905,6 +2905,33 @@ img.u-pull-left {
     visibility : hidden;
 }
 
+.language-switcher {
+    position: absolute;
+    right: 3.4rem;
+    top: 3.2rem;
+    display: flex;
+    gap: 0.6rem;
+    z-index: 100;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--color-body);
+    padding: 0.45rem 0.75rem;
+    border-radius: 999px;
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+    transition: all 0.2s ease;
+}
+
+.lang-btn.is-active,
+.lang-btn:hover {
+    background: var(--color-2);
+    border-color: var(--color-2);
+    color: #000;
+}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * page-wrap
