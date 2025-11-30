@@ -2910,7 +2910,8 @@ img.u-pull-left {
     right: 3.4rem;
     top: 3.2rem;
     display: flex;
-    gap: 0.6rem;
+    align-items: center;
+    gap: 0.75rem;
     z-index: 100;
 }
 
@@ -2919,25 +2920,56 @@ img.u-pull-left {
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--color-body-light);
-    align-self: center;
 }
 
-.lang-btn {
-    background: transparent;
+.language-switcher__field {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.lang-select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: var(--color-body);
-    padding: 0.45rem 0.75rem;
+    padding: 0.6rem 3.2rem 0.6rem 1.2rem;
     border-radius: 999px;
     font-size: 1.2rem;
     letter-spacing: 0.05em;
+    cursor: pointer;
     transition: all 0.2s ease;
+    min-width: 8.4rem;
 }
 
-.lang-btn.is-active,
-.lang-btn:hover {
-    background: var(--color-2);
+.lang-select:focus {
+    outline: none;
     border-color: var(--color-2);
-    color: #000;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.08);
+}
+
+.lang-select:hover {
+    border-color: rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.language-switcher__chevron {
+    position: absolute;
+    right: 1.2rem;
+    pointer-events: none;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-left: 2px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+    transform: rotate(-45deg);
+    transition: border-color 0.2s ease;
+}
+
+.lang-select:focus + .language-switcher__chevron,
+.lang-select:hover + .language-switcher__chevron {
+    border-color: #fff;
 }
 
 @media screen and (max-width: 768px) {
@@ -2955,11 +2987,16 @@ img.u-pull-left {
         display: none;
     }
 
-    .lang-btn {
-        border-color: rgba(255, 255, 255, 0.35);
-        color: #fff;
-        padding: 0.35rem 0.65rem;
+    .lang-select {
+        padding: 0.45rem 3rem 0.45rem 1rem;
+        min-width: 7.2rem;
         font-size: 1rem;
+        background: rgba(0, 0, 0, 0.35);
+        color: #fff;
+    }
+
+    .language-switcher__chevron {
+        right: 1rem;
     }
 }
 

@@ -657,14 +657,8 @@
    /* Language Switcher
     * ------------------------------------------------------ */
     const ssLanguageSwitcher = function() {
-        const buttons = document.querySelectorAll('.lang-btn');
-        if (!buttons.length) return;
-
-        const setActiveButton = function(lang) {
-            buttons.forEach(function(btn) {
-                btn.classList.toggle('is-active', btn.dataset.lang === lang);
-            });
-        };
+        const select = document.querySelector('.lang-select');
+        if (!select) return;
 
         const applyTranslations = function(lang) {
             const dictionary = translations[lang] || translations.fr;
@@ -686,18 +680,15 @@
         const storedLang = localStorage.getItem('preferred-lang');
         const initialLang = translations[storedLang] ? storedLang : 'fr';
 
-        setActiveButton(initialLang);
+        select.value = initialLang;
         applyTranslations(initialLang);
 
-        buttons.forEach(function(button) {
-            button.addEventListener('click', function() {
-                const lang = button.dataset.lang;
-                if (!translations[lang]) return;
+        select.addEventListener('change', function(event) {
+            const lang = event.target.value;
+            if (!translations[lang]) return;
 
-                localStorage.setItem('preferred-lang', lang);
-                setActiveButton(lang);
-                applyTranslations(lang);
-            });
+            localStorage.setItem('preferred-lang', lang);
+            applyTranslations(lang);
         });
     }; // end ssLanguageSwitcher
 

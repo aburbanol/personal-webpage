@@ -71,10 +71,15 @@
                     </ul>
                 </nav>
                 <div class="language-switcher" aria-label="Changer la langue">
-                    <span class="language-switcher__label">Lang</span>
-                    <button class="lang-btn" data-lang="es">ES</button>
-                    <button class="lang-btn" data-lang="en">EN</button>
-                    <button class="lang-btn is-active" data-lang="fr">FR</button>
+                    <label class="language-switcher__label" for="language-select">Lang</label>
+                    <div class="language-switcher__field">
+                        <select id="language-select" class="lang-select" aria-label="Sélectionnez votre langue">
+                            <option value="es">ES</option>
+                            <option value="en">EN</option>
+                            <option value="fr" selected>FR</option>
+                        </select>
+                        <span class="language-switcher__chevron" aria-hidden="true"></span>
+                    </div>
                 </div>
             </div>
 
