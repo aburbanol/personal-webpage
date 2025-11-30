@@ -2686,7 +2686,7 @@ img.u-pull-left {
 }
 
 .text-huge-title {
-    --text-huge : 10.8rem;
+    --text-huge : 8.8rem;
     font-size   : var(--text-huge);
     line-height : 1.0740;
     margin-top  : 0;
@@ -2916,7 +2916,6 @@ img.u-pull-left {
 }
 
 
-
 /* ===================================================================
  * # SITE HEADER
  *
@@ -2974,11 +2973,11 @@ img.u-pull-left {
 }
 
 .main-nav {
-    padding : 0;
+    display: flex;
 }
 
 .main-nav a {
-    padding : 0 2rem 0 2.4rem;
+    padding : 2rem 2rem 2rem 2.4rem;
 }
 
 .main-nav .current a {
@@ -2988,7 +2987,7 @@ img.u-pull-left {
 .main-nav ul {
     list-style       : none;
     display          : flex;
-    flex-flow        : row nowrap;
+    flex: 1 1 90%;
     margin           : 0;
     padding          : 0;
     background-color : var(--color-body);
@@ -3006,6 +3005,21 @@ img.u-pull-left {
 .main-nav li:last-child {
     border-right : none;
 }
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+}
+
+/* Style the select */
+.lang-select {
+    color: #fff;
+    padding : 0 2rem 0 2.4rem;
+    background: transparent; /* optional, depending your design */
+    
+}
+
+
 
 /* --------------------------------------------------------------------
  * ## mobile menu toggle
