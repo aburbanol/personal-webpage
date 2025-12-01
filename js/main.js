@@ -14,7 +14,7 @@
             "nav.works": "Proyectos",
             "nav.contact": "Contacto",
             "intro.tagline": "Artista – Investigador – Productor en nuevos medios y XR",
-            "intro.title": "Andrés Burbano López <br> diseña relatos inmersivos,<br> experiencias XR con impacto <br> y plataformas digitales <br> al servicio de las comunidades.",
+            "intro.title": "Andrés Burbano <br> diseña relatos inmersivos,<br> experiencias XR con impacto <br> y plataformas digitales <br> al servicio de las comunidades.",
             "intro.profile": "Perfil",
             "about.title": "Sobre mí",
             "about.paragraph": "Director, productor y tecnólogo creativo que teje arte digital, tecnologías XR y justicia social. Fundador de CANVAR y cofundador de MAIX y XRCol, lidero proyectos inmersivos que visibilizan relatos subrepresentados. Miembro de Sundance Institute: Art of Practice, Unity for Humanity y XR LATAM, acompaño a artistas y comunidades en la creación de experiencias interactivas, memorias y con compromiso social.",
@@ -121,7 +121,7 @@
             "contact.direct": "Contacto directo",
             "contact.networks": "Redes y colectivos",
             "contact.cta": "Escribir a Andrés.",
-            "footer.copyright": "© Copyright Andrés Burbano López",
+            "footer.copyright": "© Copyright Andrés Burbano",
             "footer.design": "Design by <a href=\"https://www.styleshout.com/\">StyleShout</a> – Adaptado por Andrés"
         },
         en: {
@@ -130,7 +130,7 @@
             "nav.works": "Works",
             "nav.contact": "Contact",
             "intro.tagline": "Artist – Researcher – Producer in new media & XR",
-            "intro.title": "Andrés Burbano López <br> crafts immersive stories,<br> impact-driven XR experiences <br> and digital platforms <br> for communities.",
+            "intro.title": "Andres Burbano <br> crafts immersive stories,<br> impact-driven XR experiences <br> and digital platforms <br> for communities.",
             "intro.profile": "Profile",
             "about.title": "About",
             "about.paragraph": "Director, producer and creative technologist weaving digital art, XR technologies and social justice. Founder of CANVAR and co-founder of MAIX and XRCol, I lead immersive projects that spotlight underrepresented narratives. As a Sundance Institute: Art of Practice fellow and member of Unity for Humanity and XR LATAM, I guide artists and communities in creating interactive, memory-driven and socially engaged experiences.",
@@ -172,7 +172,7 @@
             "edu.master.meta": "ECE Paris École d'Ingénieurs",
             "edu.master.time": "2013",
             "edu.master.desc": "Specialization in information systems, networks and global fabrication (UCI Irvine, 2012).",
-            "edu.engineer.title": "Information systems engineer",
+            "edu.engineer.title": "Software engineer",
             "edu.engineer.meta": "ECI Colombian School of Engineering J. Garavito",
             "edu.engineer.time": "2008",
             "edu.engineer.desc": "Engineering training focused on software and technological project management.",
@@ -237,7 +237,7 @@
             "contact.direct": "Direct contact",
             "contact.networks": "Networks & collectives",
             "contact.cta": "Write to Andrés.",
-            "footer.copyright": "© Copyright Andrés Burbano López",
+            "footer.copyright": "© Copyright Andrés Burbano",
             "footer.design": "Design by <a href=\"https://www.styleshout.com/\">StyleShout</a> – Adapted by Andrés"
         },
         fr: {
@@ -246,7 +246,7 @@
             "nav.works": "Projets",
             "nav.contact": "Contact",
             "intro.tagline": "Artiste – Chercheur – Producteur en nouveaux médias & XR",
-            "intro.title": "Andrés Burbano López <br> conçoit des récits immersifs, <br> des expériences XR engagées <br> et des plateformes numériques <br> au service des communautés.",
+            "intro.title": "Andrés Burbano <br> conçoit des récits immersifs, <br> des expériences XR engagées <br> et des plateformes numériques <br> au service des communautés.",
             "intro.profile": "Profil",
             "about.title": "À propos",
             "about.paragraph": "Directeur, producteur et technologue créatif, je tisse art numérique, technologies XR et justice sociale. Fondateur de CANVAR et co-fondateur de MAIX et XRCol, je pilote des projets immersifs qui mettent en lumière des récits sous-représentés. Membre du Sundance Institute : Art of Practice, Unity for Humanity et XR LATAM, j'accompagne artistes et communautés dans la création d'expériences interactives mémorielles et engagées.",
@@ -353,7 +353,7 @@
             "contact.direct": "Contact direct",
             "contact.networks": "Réseaux & collectifs",
             "contact.cta": "Écrire à Andrés.",
-            "footer.copyright": "© Copyright Andrés Burbano López",
+            "footer.copyright": "© Copyright Andrés Burbano",
             "footer.design": "Design by <a href=\"https://www.styleshout.com/\">StyleShout</a> – Adapté par Andrés"
         }
     };
