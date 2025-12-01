@@ -661,8 +661,9 @@
         if (!select) return;
 
         const applyTranslations = function(lang) {
-            const dictionary = translations[lang] || translations.en;
-            document.documentElement.setAttribute('lang', lang);
+            const dictionary = translations[lang] ? translations[lang] : translations.en;
+            const appliedLang = translations[lang] ? lang : 'en';
+            document.documentElement.setAttribute('lang', appliedLang);
 
             document.querySelectorAll('[data-i18n]').forEach(function(el) {
                 const key = el.dataset.i18n;
@@ -677,8 +678,21 @@
             });
         };
 
+        const detectBrowserLanguage = function() {
+            const browserLanguage = (navigator.languages && navigator.languages.length
+                ? navigator.languages[0]
+                : navigator.language || '').toLowerCase();
+
+            const baseLanguage = browserLanguage.split('-')[0];
+            return translations[baseLanguage] ? baseLanguage : 'en';
+        };
+
         const storedLang = localStorage.getItem('preferred-lang');
-        const initialLang = translations[storedLang] ? storedLang : 'en';
+        const initialLang = translations[storedLang]
+            ? storedLang
+            : detectBrowserLanguage();
+
+        localStorage.setItem('preferred-lang', initialLang);
 
         select.value = initialLang;
         applyTranslations(initialLang);
