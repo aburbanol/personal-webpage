@@ -1,0 +1,69 @@
+.elementor-kit-5{--e-global-color-primary:#FED105;--e-global-color-secondary:#000000;--e-global-color-text:#292929;--e-global-color-accent:#D8D8D8;--e-global-color-c494a5a:#FED105;--e-global-color-7e5d591:#FFFFFF;--e-global-color-36ec609:#979797;--e-global-color-e7b9d18:#020201;--e-global-typography-primary-font-family:"trade-gothic";--e-global-typography-primary-font-size:10px;--e-global-typography-primary-font-weight:normal;--e-global-typography-secondary-font-family:"trade-gothic";--e-global-typography-secondary-font-weight:400;--e-global-typography-text-font-family:"trade-gothic";--e-global-typography-text-font-weight:400;--e-global-typography-accent-font-family:"trade-gothic";--e-global-typography-accent-font-weight:500;--e-global-typography-e7297a6-font-family:"trade-gothic-cond";--e-global-typography-e7297a6-font-size:2.2rem;--e-global-typography-e7297a6-font-weight:bold;--e-global-typography-e80dd33-font-family:"trade-gothic-cond";--e-global-typography-e80dd33-font-size:1rem;--e-global-typography-e80dd33-font-weight:normal;--e-global-typography-e80dd33-line-height:36px;--e-global-typography-e80dd33-letter-spacing:0px;--e-global-typography-98a79ec-font-family:"trade-gothic";--e-global-typography-98a79ec-font-weight:300;font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-kit-5 e-page-transition{background-color:#FFBC7D;}.elementor-kit-5 a{font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-kit-5 h1{font-family:"trade-gothic", Sans-serif;font-size:2.5rem;font-weight:normal;}.elementor-kit-5 h2{font-family:"trade-gothic", Sans-serif;font-size:2.188rem;font-weight:normal;}.elementor-kit-5 h3{font-family:"trade-gothic", Sans-serif;font-weight:400;}.elementor-kit-5 h4{font-family:var( --e-global-typography-secondary-font-family ), Sans-serif;font-weight:var( --e-global-typography-secondary-font-weight );}.elementor-kit-5 h5{font-family:var( --e-global-typography-secondary-font-family ), Sans-serif;font-weight:var( --e-global-typography-secondary-font-weight );}.elementor-kit-5 h6{font-family:var( --e-global-typography-secondary-font-family ), Sans-serif;font-weight:var( --e-global-typography-secondary-font-weight );}.elementor-section.elementor-section-boxed > .elementor-container{max-width:1140px;}.e-con{--container-max-width:1140px;}.elementor-widget:not(:last-child){margin-block-end:0px;}.elementor-element{--widgets-spacing:0px 0px;--widgets-spacing-row:0px;--widgets-spacing-column:0px;}{}h1.entry-title{display:var(--page-title-display);}@media(max-width:1024px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:1024px;}.e-con{--container-max-width:1024px;}}@media(max-width:767px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:767px;}.e-con{--container-max-width:767px;}}/* Start custom CSS */.entry-title {
+display: none;
+}/* End custom CSS */
+/* Start Custom Fonts CSS */@font-face {
+	font-family: 'trade-gothic';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('https://www.sundance.org/wp-content/uploads/2021/07/TradeGothicNextLtPro-Reg.woff2') format('woff2'),
+		url('https://www.sundance.org/wp-content/uploads/2021/07/TradeGothicNextLtPro-Reg.woff') format('woff');
+}
+@font-face {
+	font-family: 'trade-gothic';
+	font-style: italic;
+	font-weight: normal;
+	font-display: auto;
+	src: url('https://www.sundance.org/wp-content/uploads/2021/07/TradeGothicNextLtPro-It.woff2') format('woff2'),
+		url('https://www.sundance.org/wp-content/uploads/2021/07/TradeGothicNextLtPro-It.woff') format('woff');
+}
+@font-face {
+	font-family: 'trade-gothic';
+	font-style: normal;
+	font-weight: bold;
+	font-display: auto;
+	src: url('https://www.sundance.org/wp-content/uploads/2021/07/TradeGothicNextLtPro-Bd.woff2') format('woff2'),
+		url('https://www.sundance.org/wp-content/uploads/2021/07/TradeGothicNextLtPro-Bd.woff') format('woff');
+}
+@font-face {
+	font-family: 'trade-gothic';
+	font-style: italic;
+	font-weight: bold;
+	font-display: auto;
+	src: url('https://www.sundance.org/wp-content/uploads/2021/07/TradeGothicNextLtPro-BdIt.woff2') format('woff2'),
+		url('https://www.sundance.org/wp-content/uploads/2021/07/TradeGothicNextLtPro-BdIt.woff') format('woff');
+}
+/* End Custom Fonts CSS */
+/* Start Custom Fonts CSS */@font-face {
+	font-family: 'trade-gothic-cond';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('https://www.sundance.org/wp-content/uploads/2021/07/TradeGothicNextLtPro-Cn.woff2') format('woff2'),
+		url('https://www.sundance.org/wp-content/uploads/2021/07/TradeGothicNextLtPro-Cn.woff') format('woff');
+}
+@font-face {
+	font-family: 'trade-gothic-cond';
+	font-style: italic;
+	font-weight: normal;
+	font-display: auto;
+	src: url('https://www.sundance.org/wp-content/uploads/2021/07/TradeGothicNextLtPro-CnIt.woff2') format('woff2'),
+		url('https://www.sundance.org/wp-content/uploads/2021/07/TradeGothicNextLtPro-CnIt.woff') format('woff');
+}
+@font-face {
+	font-family: 'trade-gothic-cond';
+	font-style: normal;
+	font-weight: bold;
+	font-display: auto;
+	src: url('https://www.sundance.org/wp-content/uploads/2021/07/TradeGothicNextLtPro-BdCn.woff2') format('woff2'),
+		url('https://www.sundance.org/wp-content/uploads/2021/07/TradeGothicNextLtPro-BdCn.woff') format('woff');
+}
+@font-face {
+	font-family: 'trade-gothic-cond';
+	font-style: italic;
+	font-weight: bold;
+	font-display: auto;
+	src: url('https://www.sundance.org/wp-content/uploads/2021/07/TradeGothicNextLtPro-BdCnIt.woff2') format('woff2'),
+		url('https://www.sundance.org/wp-content/uploads/2021/07/TradeGothicNextLtPro-BdCnIt.woff') format('woff');
+}
+/* End Custom Fonts CSS */

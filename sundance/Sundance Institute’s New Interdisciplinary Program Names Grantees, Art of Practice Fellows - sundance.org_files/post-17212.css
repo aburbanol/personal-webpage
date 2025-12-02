@@ -1,0 +1,33 @@
+.elementor-17212 .elementor-element.elementor-element-0946fed{margin-top:0px;margin-bottom:0px;}.elementor-17212 .elementor-element.elementor-element-7c58812{font-family:"trade-gothic", Sans-serif;font-size:14px;font-style:italic;}.elementor-17212 .elementor-element.elementor-element-eb31eff{--spacer-size:30px;}.elementor-17212 .elementor-element.elementor-element-fb0cad8{font-size:16px;font-weight:normal;font-style:normal;}.elementor-17212 .elementor-element.elementor-element-64c8f34 > .elementor-widget-container{margin:0px 0px 0px 50px;}.elementor-17212 .elementor-element.elementor-element-e02fb8a > .elementor-widget-container{margin:0px 0px 0px 050px;}.elementor-17212 .elementor-element.elementor-element-30a48ad{--divider-border-style:solid;--divider-color:#000;--divider-border-width:1px;}.elementor-17212 .elementor-element.elementor-element-30a48ad .elementor-divider-separator{width:100%;}.elementor-17212 .elementor-element.elementor-element-30a48ad .elementor-divider{padding-block-start:15px;padding-block-end:15px;}/* Start Custom Fonts CSS */@font-face {
+	font-family: 'trade-gothic';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('https://www.sundance.org/wp-content/uploads/2021/07/TradeGothicNextLtPro-Reg.woff2') format('woff2'),
+		url('https://www.sundance.org/wp-content/uploads/2021/07/TradeGothicNextLtPro-Reg.woff') format('woff');
+}
+@font-face {
+	font-family: 'trade-gothic';
+	font-style: italic;
+	font-weight: normal;
+	font-display: auto;
+	src: url('https://www.sundance.org/wp-content/uploads/2021/07/TradeGothicNextLtPro-It.woff2') format('woff2'),
+		url('https://www.sundance.org/wp-content/uploads/2021/07/TradeGothicNextLtPro-It.woff') format('woff');
+}
+@font-face {
+	font-family: 'trade-gothic';
+	font-style: normal;
+	font-weight: bold;
+	font-display: auto;
+	src: url('https://www.sundance.org/wp-content/uploads/2021/07/TradeGothicNextLtPro-Bd.woff2') format('woff2'),
+		url('https://www.sundance.org/wp-content/uploads/2021/07/TradeGothicNextLtPro-Bd.woff') format('woff');
+}
+@font-face {
+	font-family: 'trade-gothic';
+	font-style: italic;
+	font-weight: bold;
+	font-display: auto;
+	src: url('https://www.sundance.org/wp-content/uploads/2021/07/TradeGothicNextLtPro-BdIt.woff2') format('woff2'),
+		url('https://www.sundance.org/wp-content/uploads/2021/07/TradeGothicNextLtPro-BdIt.woff') format('woff');
+}
+/* End Custom Fonts CSS */
