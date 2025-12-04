@@ -3804,6 +3804,13 @@ img.u-pull-left {
 
 .modal-popup__desc {
     padding : 0 var(--vspace-1_25) var(--vspace-0_25);
+    text-align : left;
+}
+
+.modal-popup__link {
+    display : block;
+    margin  : var(--vspace-0_25) 0 var(--vspace-0_5);
+    text-align : right;
 }
 
 .modal-popup__cat {

@@ -70,8 +70,8 @@
             "work.paramo.title": "Paramoverso.",
             "work.nuages.cat": "AR",
             "work.nuages.title": "Atelier de Nuages.",
-            "work.continuum.cat": "VR documental",
-            "work.continuum.title": "Continuum VR.",
+            "work.barra.cat": "VR documental",
+            "work.barra.title": "Continuum VR.",
             "work.colombia.cat": "360° y AR",
             "work.colombia.title": "Colombia Resiste 360.",
             "modal.sexilio.title": "Sexilio",
@@ -94,11 +94,11 @@
             "modal.nuages.cat1": "AR",
             "modal.nuages.cat2": "Curaduría interactiva",
             "modal.nuages.cta": "Colaborar en curaduría",
-            "modal.continuum.title": "Continuum VR",
-            "modal.continuum.desc": "Experiencia VR documental centrada en la memoria de trabajadoras sexuales trans en Colombia. Ganadora de Unity for Humanity e IDFA DocLab Forum, ofrece un espacio inmersivo de reflexión y defensa.",
-            "modal.continuum.cat1": "VR documental",
-            "modal.continuum.cat2": "Impacto social",
-            "modal.continuum.cta": "Hablar del impacto",
+            "modal.barra.title": "Continuum VR",
+            "modal.barra.desc": "Experiencia VR documental centrada en la memoria de trabajadoras sexuales trans en Colombia. Ganadora de Unity for Humanity e IDFA DocLab Forum, ofrece un espacio inmersivo de reflexión y defensa.",
+            "modal.barra.cat1": "VR documental",
+            "modal.barra.cat2": "Impacto social",
+            "modal.barra.cta": "Hablar del impacto",
             "modal.colombia.title": "Colombia Resiste 360",
             "modal.colombia.desc": "Obra inmersiva que mezcla video 360° y realidad aumentada para documentar las manifestaciones colombianas de 2021. Experiencia móvil y AR que visibiliza las voces de la diáspora.",
             "modal.colombia.cat1": "360° y AR",
@@ -186,8 +186,8 @@
             "work.paramo.title": "Paramoverso.",
             "work.nuages.cat": "AR",
             "work.nuages.title": "Atelier de Nuages.",
-            "work.continuum.cat": "Documentary VR",
-            "work.continuum.title": "Continuum VR.",
+            "work.barra.cat": "Documentary VR",
+            "work.barra.title": "Continuum VR.",
             "work.colombia.cat": "360° & AR",
             "work.colombia.title": "Colombia Resiste 360.",
             "modal.sexilio.title": "Sexilio",
@@ -210,11 +210,11 @@
             "modal.nuages.cat1": "AR",
             "modal.nuages.cat2": "Interactive curation",
             "modal.nuages.cta": "Curate together",
-            "modal.continuum.title": "Continuum VR",
-            "modal.continuum.desc": "Documentary VR experience centered on the memory of trans sex workers in Colombia. Unity for Humanity and IDFA DocLab Forum winner, offering an immersive space for reflection and advocacy.",
-            "modal.continuum.cat1": "Documentary VR",
-            "modal.continuum.cat2": "Social impact",
-            "modal.continuum.cta": "Talk impact",
+            "modal.barra.title": "Continuum VR",
+            "modal.barra.desc": "Documentary VR experience centered on the memory of trans sex workers in Colombia. Unity for Humanity and IDFA DocLab Forum winner, offering an immersive space for reflection and advocacy.",
+            "modal.barra.cat1": "Documentary VR",
+            "modal.barra.cat2": "Social impact",
+            "modal.barra.cta": "Talk impact",
             "modal.colombia.title": "Colombia Resiste 360",
             "modal.colombia.desc": "Immersive piece blending 360° video and AR to document Colombia's 2021 protests. Mobile and AR experience amplifying diaspora voices.",
             "modal.colombia.cat1": "360° & AR",
@@ -302,8 +302,8 @@
             "work.paramo.title": "Paramoverso.",
             "work.nuages.cat": "AR",
             "work.nuages.title": "Atelier de Nuages.",
-            "work.continuum.cat": "VR documentaire",
-            "work.continuum.title": "Continuum VR.",
+            "work.barra.cat": "VR documentaire",
+            "work.barra.title": "Continuum VR.",
             "work.colombia.cat": "360° & AR",
             "work.colombia.title": "Colombia Resiste 360.",
             "modal.sexilio.title": "Sexilio",
@@ -326,11 +326,11 @@
             "modal.nuages.cat1": "AR",
             "modal.nuages.cat2": "Curation interactive",
             "modal.nuages.cta": "Collaborer sur une curation",
-            "modal.continuum.title": "Continuum VR",
-            "modal.continuum.desc": "Expérience VR documentaire centrée sur la mémoire de travailleuses du sexe transgenres en Colombie. Lauréat Unity for Humanity et IDFA DocLab Forum, offrant un espace immersif de réflexion et de plaidoyer.",
-            "modal.continuum.cat1": "VR documentaire",
-            "modal.continuum.cat2": "Impact social",
-            "modal.continuum.cta": "Parler de l'impact",
+            "modal.barra.title": "Continuum VR",
+            "modal.barra.desc": "Expérience VR documentaire centrée sur la mémoire de travailleuses du sexe transgenres en Colombie. Lauréat Unity for Humanity et IDFA DocLab Forum, offrant un espace immersif de réflexion et de plaidoyer.",
+            "modal.barra.cat1": "VR documentaire",
+            "modal.barra.cat2": "Impact social",
+            "modal.barra.cta": "Parler de l'impact",
             "modal.colombia.title": "Colombia Resiste 360",
             "modal.colombia.desc": "Œuvre immersive mêlant vidéo 360° et réalité augmentée pour documenter les manifestations colombiennes de 2021. Expérience mobile et AR donnant visibilité aux voix de la diaspora.",
             "modal.colombia.cat1": "360° & AR",
@@ -654,6 +654,54 @@
    }; // end ssAlertBoxes
 
 
+   /* Intro floating images
+    * ------------------------------------------------------ */
+    const ssIntroFloaters = function() {
+        const floaters = document.querySelectorAll('.intro-floating-image');
+        if (!floaters.length) return;
+
+        const floaterStates = Array.from(floaters).map(function(el) {
+            return {
+                el: el,
+                amplitudeX: 8 + Math.random() * 14,
+                amplitudeY: 10 + Math.random() * 18,
+                speed: 0.08 + Math.random() * 0.14,
+                phase: Math.random() * Math.PI * 2
+            };
+        });
+
+        let latestScroll = window.scrollY || 0;
+        let ticking = false;
+
+        const update = function() {
+            floaterStates.forEach(function(floater) {
+                const progress = (latestScroll * 0.01) * floater.speed;
+                const offsetX = Math.sin(progress + floater.phase) * floater.amplitudeX;
+                const offsetY = Math.cos(progress + floater.phase) * floater.amplitudeY;
+                const rotation = offsetX * 0.03;
+
+                floater.el.style.transform = `translate(${offsetX}px, ${offsetY}px) rotate(${rotation}deg)`;
+            });
+
+            ticking = false;
+        };
+
+        const requestTick = function() {
+            if (!ticking) {
+                requestAnimationFrame(update);
+                ticking = true;
+            }
+        };
+
+        update();
+
+        window.addEventListener('scroll', function() {
+            latestScroll = window.scrollY || 0;
+            requestTick();
+        });
+    }; // end ssIntroFloaters
+
+
    /* Language Switcher
     * ------------------------------------------------------ */
     const ssLanguageSwitcher = function() {
@@ -761,6 +809,7 @@
         ssSwiper();
         ssLightbox();
         ssAlertBoxes();
+        ssIntroFloaters();
         ssMoveTo();
         ssLanguageSwitcher();
 
