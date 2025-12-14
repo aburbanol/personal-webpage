@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unity Interactive Controller</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app" id="app">
+      <section class="card" id="welcome-card">
+        <header>
+          <h1>Welcome to the Experience</h1>
+          <p>Control the Unity visual set from your device.</p>
+        </header>
+        <div class="input-group">
+          <label for="nickname">Nickname (optional)</label>
+          <input id="nickname" name="nickname" placeholder="Guest" autocomplete="off" />
+        </div>
+        <button id="join-btn" class="primary">Join</button>
+        <p class="hint">Grant sensor access to help the visuals react to your movements.</p>
+      </section>
+
+      <section class="card hidden" id="sensor-card">
+        <header class="card-header">
+          <div>
+            <p class="eyebrow">Connected</p>
+            <h2 id="scene-title">Loading scenes...</h2>
+            <p class="hint" id="scene-hint">Waiting for scene selection</p>
+          </div>
+          <div class="pill" id="scene-pill">Scene</div>
+        </header>
+
+        <div class="sensor-list" id="sensor-list"></div>
+
+        <div class="status">
+          <p><strong>Interactions:</strong> <span id="interaction-state">Enabled</span></p>
+          <p><strong>Light level:</strong> <span id="light-level">0.5</span></p>
+        </div>
+      </section>
+    </main>
+
+    <template id="sensor-template">
+      <label class="sensor-item">
+        <div>
+          <p class="sensor-name"></p>
+          <p class="sensor-desc"></p>
+        </div>
+        <input type="checkbox" class="sensor-toggle" />
+      </label>
+    </template>
+
+    <script type="module" src="./mobile.js"></script>
+  </body>
+</html>

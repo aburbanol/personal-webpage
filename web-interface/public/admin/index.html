@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show Control Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="panel">
+        <header class="panel-header">
+          <div>
+            <p class="eyebrow">Audience</p>
+            <h1>Connected Users</h1>
+          </div>
+          <div class="badge" id="user-count">0 online</div>
+        </header>
+        <div id="participants"></div>
+      </section>
+
+      <section class="panel">
+        <header class="panel-header">
+          <div>
+            <p class="eyebrow">Controls</p>
+            <h1>Scenes & Interaction</h1>
+          </div>
+        </header>
+
+        <div class="control-group">
+          <label for="scene-select">Active scene</label>
+          <select id="scene-select"></select>
+          <button id="apply-scene" class="primary">Change scene</button>
+        </div>
+
+        <div class="control-group">
+          <label for="light-range">Light intensity</label>
+          <input type="range" id="light-range" min="0" max="1" step="0.01" />
+          <span id="light-value" class="value">0.5</span>
+        </div>
+
+        <div class="control-group inline">
+          <div>
+            <p class="eyebrow">Interactions</p>
+            <h3 id="interaction-label">Enabled</h3>
+          </div>
+          <button id="toggle-interaction" class="ghost">Toggle</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <header class="panel-header">
+          <div>
+            <p class="eyebrow">Unity bridge</p>
+            <h1>Live Stream</h1>
+          </div>
+        </header>
+        <div class="log" id="log"></div>
+      </section>
+    </main>
+
+    <template id="participant-row">
+      <div class="row">
+        <div>
+          <p class="title"></p>
+          <p class="subtitle"></p>
+        </div>
+        <div class="pill"></div>
+      </div>
+    </template>
+
+    <script type="module" src="./admin.js"></script>
+  </body>
+</html>
