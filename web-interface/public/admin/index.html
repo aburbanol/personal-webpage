@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Server Control</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="panel">
+        <header>
+          <h1>Connected users</h1>
+          <p>See who is sending data and what sensors are active.</p>
+        </header>
+        <div id="user-list" class="user-list"></div>
+      </section>
+
+      <section class="panel">
+        <header>
+          <h1>Scene + Interactions</h1>
+          <p>Broadcast real-time scene changes to clients and Unity.</p>
+        </header>
+        <div class="field">
+          <label for="scene-select">Scene</label>
+          <select id="scene-select"></select>
+        </div>
+
+        <div class="field">
+          <label for="light-range">Light level</label>
+          <input id="light-range" type="range" min="0" max="1" step="0.05" />
+          <div id="light-value" class="value">0.5</div>
+        </div>
+
+        <div class="field inline">
+          <label for="interaction-toggle">User interactions enabled</label>
+          <input id="interaction-toggle" type="checkbox" checked />
+        </div>
+      </section>
+    </main>
+    <script src="admin.js" type="module"></script>
+  </body>
+</html>

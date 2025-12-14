@@ -1,0 +1,14 @@
+{
+  "name": "web-interface",
+  "version": "1.0.0",
+  "description": "WebSocket-driven multi-user mobile interface and admin dashboard for Unity visuals",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "NODE_ENV=development node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.15.1"
+  }
+}

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mobile Controller</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="app" class="scene welcome">
+      <section class="card" id="welcome-view">
+        <h1>Welcome to the experience</h1>
+        <p class="lede">Share your motion to guide the live Unity visuals.</p>
+        <label class="field">
+          <span>Nickname (optional)</span>
+          <input id="nickname" type="text" name="nickname" placeholder="Traveler" />
+        </label>
+        <button id="join-btn">Join</button>
+        <p class="hint">A WebSocket connection will be created when you join.</p>
+      </section>
+
+      <section class="card hidden" id="sensor-view">
+        <header class="section-header">
+          <div>
+            <h2>Device sensors</h2>
+            <p class="lede">Choose what you want to share.</p>
+          </div>
+          <div class="connection" id="connection-indicator">Connecting…</div>
+        </header>
+
+        <div id="sensor-list" class="sensor-list"></div>
+
+        <div class="cta-row">
+          <button id="start-stream" class="secondary">Start sending data</button>
+          <button id="stop-stream" class="ghost">Stop</button>
+        </div>
+      </section>
+
+      <section class="card hidden" id="scene-view">
+        <header class="section-header">
+          <div>
+            <h2>Live scene</h2>
+            <p class="lede">The visuals respond to your movements.</p>
+          </div>
+          <div class="pill" id="active-scene">Scene</div>
+        </header>
+        <p id="scene-description" class="lede"></p>
+      </section>
+    </main>
+
+    <template id="sensor-item-template">
+      <label class="sensor-item">
+        <div>
+          <div class="sensor-name"></div>
+          <div class="sensor-details"></div>
+        </div>
+        <input type="checkbox" />
+      </label>
+    </template>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
