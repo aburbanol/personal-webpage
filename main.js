@@ -11,6 +11,7 @@
         es: {
             "nav.intro": "Intro",
             "nav.about": "Perfil",
+            "nav.expertise": "Experiencia",
             "nav.works": "Proyectos",
             "nav.contact": "Contacto",
             "intro.tagline": "Artista – Investigador – Productor en nuevos medios y XR",
@@ -127,6 +128,7 @@
         en: {
             "nav.intro": "Intro",
             "nav.about": "About",
+            "nav.expertise": "Expertise",
             "nav.works": "Works",
             "nav.contact": "Contact",
             "intro.tagline": "Artist – Researcher – Producer in new media & XR",
@@ -243,6 +245,7 @@
         fr: {
             "nav.intro": "Intro",
             "nav.about": "Profil",
+            "nav.expertise": "Expertise",
             "nav.works": "Projets",
             "nav.contact": "Contact",
             "intro.tagline": "Artiste – Chercheur – Producteur en nouveaux médias & XR",
